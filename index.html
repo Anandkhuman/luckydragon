@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Expired - Redirecting...</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff4b2b;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            line-height: 1.6;
+            color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #00ffcc;
+            font-weight: 600;
+        }
+
+        /* Loading Spinner Animation */
+        .spinner {
+            margin: 30px auto;
+            width: 60px;
+            height: 60px;
+            border: 6px solid rgba(0, 255, 204, 0.1);
+            border-top-color: #00ffcc;
+            border-radius: 50%;
+            animation: spin 1s cubic-bezier(0.55, 0.15, 0.45, 0.85) infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>This website has expired</h1>
+    
+    <p>We are redirecting you to the secure payment page for renewal.</p>
+    
+    <div class="spinner"></div>
+    
+    <p>After the payment is completed, your website will be <span class="highlight">reactivated automatically</span>.</p>
+
+    <script>
+        // Redirect to the approved payment page after 6 seconds
+        setTimeout(function() {
+            window.location.href = "https://sinthakeithel.in/renew";
+        }, 6000);
+    </script>
+
+</body>
+</html>
